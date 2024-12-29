@@ -1,0 +1,105 @@
+/* Overall container for the event/about page */
+.event-about-container {
+    display: flex;
+    flex-direction: row; /* Aligns image and details horizontally */
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+    gap: 30px; /* Add space between image and details */
+    margin-top: 90px;
+  }
+  
+  /* Section for the image */
+  .event-about-image {
+    width: 50%; /* Image takes up 50% of the space */
+    border-radius: 10px;
+    overflow: hidden; /* Ensure image doesn't overflow the border */
+  }
+  
+  .event-about-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensure the image is well cropped */
+    border-radius: 10px;
+  }
+  
+  /* Info section with hotel details */
+  .event-about-info {
+    width: 50%; /* Details take up the remaining 50% */
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+    text-align: left; /* Align text to the left */
+  }
+  
+  .event-about-info h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .event-about-info p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.6;
+  }
+  
+  .event-about-info .event-about-description {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.8;
+  }
+  
+  .event-about-info h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+  
+  .event-about-info ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 25px;
+  }
+  
+  .event-about-info ul li {
+    font-size: 1.1rem;
+    color: #444;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    position: relative;
+  }
+  
+  .event-about-info ul li:before {
+    content: '✔'; /* Checkmark for list items */
+    position: absolute;
+    left: 0;
+    color: #007bff; /* Blue color for checkmark */
+  }
+  
+  /* Styling for the "Book Now" button */
+  .book-now-button {
+    padding: 12px 25px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .book-now-button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+  }
+  
